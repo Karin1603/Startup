@@ -24,6 +24,12 @@
         & + .blog__item {
             border-top: 1px solid #ddd;
         }
+
+        @include screen(768) {
+            width: calc(100% - 30px);
+            height:calc(100% - 30px) ;
+            overflow: hidden;
+        }
     }
 
     &__image {

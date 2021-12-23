@@ -6,3 +6,38 @@
 
     }
 }
+
+@media(max-width:768px) {
+    .blog__item{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .blog__image{
+        width: calc(75% - 9px);
+        padding: 10px 0;
+    }
+
+    .adwenture .tabs__item .col-33{
+        width: calc(75% - 9px);
+        margin: 13px 19px;
+        background: rgba(52,18,97,0.7);
+        text-align: center;
+    }
+
+    .row .col-33 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .services__col-33-title .services__col-33-text{
+        display: flex;
+        
+    }
+
+}

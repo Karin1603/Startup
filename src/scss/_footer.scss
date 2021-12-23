@@ -1,0 +1,20 @@
+.footer{
+    background-color: $violet;
+    max-width: 310px;
+}
+.footer__logo{
+    display: flex;
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 28px;
+        height: 28px;
+
+        &:hover {
+            background:#401352;
+            transition: .3s;
+        }
+    }
+}

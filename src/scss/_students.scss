@@ -40,6 +40,9 @@
             margin: 0 auto 28px;
             max-width: 780px;
         }
+        @include screen(768){
+            font-size: 15px;
+        }
     }
 
     &__swiper-author {
