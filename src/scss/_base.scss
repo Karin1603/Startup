@@ -63,8 +63,11 @@ section {
     padding: 35px 18px;
 
     @include screen(768) {
-        max-width: 360px;
+        padding: 35px 44px;
     }
+    @media (max-width: 480px){
+    padding: 35px 20px;
+}
 }
 
 .main-title {
@@ -75,9 +78,8 @@ section {
     text-transform: uppercase;
     text-align: center;
     line-height: 1.2;
-    padding-top: 20px;
-    padding-bottom: 27px;
-    margin-bottom: 23px;
+    padding-top: 36px;
+    padding-bottom: 23px;
     position: relative;
 
     &:after {
@@ -96,10 +98,7 @@ section {
     text-align: center;
     width: 100%;
     padding-bottom: 71px;
-
-    @include screen(992) {
-        padding: 15px 0;
-    }
+    padding-top: 29px;
 }
 
 .main-button {
@@ -186,6 +185,11 @@ section {
         &:focus {
             border-color: $violet;
         }
+        @include screen(600) {
+            width: calc(100% - 27px);
+            padding: 6px 5px;
+        }
+
     }
 
     textarea {
@@ -199,6 +203,15 @@ section {
         text-transform: uppercase;
         max-width: 170px;
         background: $white;
+
+        @include screen(600) {
+            width: calc(71% - 27px);
+            padding: 5px 3px;
+        }
+        @media (max-width: 378){
+        width: calc(100% - 13px);
+        padding: 5px 3px;
+        }
 
         &:hover {
             background: $violet;
@@ -218,8 +231,12 @@ section {
 
         input[type='text'],
         input[type='email'] {
-            width: calc(50% - 15px);
+            width: calc(100% - 15px);
         }
+        @include screen(600) {
+            flex-direction: column;   
+        }
+        
     }
 
     &__footer {

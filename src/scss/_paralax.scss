@@ -8,12 +8,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 92px 0 95px;
+        padding: 144px 0 144px;
         box-shadow: inset 0 0 0 200vw rgba(56, 10, 87, 0.451);
 
-        @include screen(992) {
-            padding: 25px 0;
-        }
     }
 
     &__title {
@@ -26,13 +23,16 @@
         span {
             text-transform: uppercase;
         }
+        @include screen(600) {
+            font-size: 20px;
+        }
 
         @include screen(600) {
-            font-size: 25px;
+            font-size: 17px;
         }
 
         @include screen(320) {
-            font-size: 20px;
+            font-size: 15px;
         }
     }
 

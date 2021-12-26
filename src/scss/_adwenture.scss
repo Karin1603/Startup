@@ -46,7 +46,7 @@
         &__button {
             font-size: 16px;
             font-family: $font-roboto;
-            padding: 5px 14px;
+            padding: 27px 21px;
             cursor: pointer;
     
             &.active {
@@ -75,8 +75,7 @@
                     overflow: hidden;
                 }
                 @include screen(768) {
-                    width: calc(100% - 30px);
-                    margin: 5px 15px;
+                    width: calc(80% - 30px);
                     overflow: hidden;
                 }
             }
@@ -100,6 +99,8 @@
         text-align: center;
         opacity: 0;
         transition: .3s;
+
+
 
         h6 {
             font-family: $font-montserrat;

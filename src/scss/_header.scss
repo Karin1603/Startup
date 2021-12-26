@@ -3,7 +3,7 @@
     left: 0;
     top: 0;
     width: 100%;
-    // background: $header-color;
+    // background: $violet;
     // box-shadow: 0 5px 5px 1px rgba(50, 50, 50, .3);
     font-family: $font-montserrat;
     z-index: 5;
@@ -80,7 +80,7 @@
         }
 
         a {
-            margin: 0 16px 0;
+            margin: 0 14px 0;
             line-height: 1.714;
             color: $font-color-banner;
         }
@@ -90,7 +90,7 @@
             overflow-y: auto;
             padding: 55px 0;
             width: 320px;
-            background: $header-color;
+            background: $violet;
             right: -110%;
             top: 0;
             display: block;
