@@ -67,7 +67,7 @@ section {
     }
     @media (max-width: 480px){
     padding: 35px 20px;
-}
+    }
 }
 
 .main-title {
@@ -119,6 +119,7 @@ section {
 }
 
 .row {
+    
     display: flex;
     flex-wrap: wrap;
 
@@ -185,9 +186,9 @@ section {
         &:focus {
             border-color: $violet;
         }
-        @include screen(600) {
-            width: calc(100% - 27px);
-            padding: 6px 5px;
+        @include screen(580) {
+            flex-direction: column;
+            width: calc(100% - 0px);   
         }
 
     }
@@ -206,11 +207,15 @@ section {
 
         @include screen(600) {
             width: calc(71% - 27px);
-            padding: 5px 3px;
+            padding: 14px 37px;
+        }
+        @include screen(580) {
+            flex-direction: column;
+            width: calc(100% - 0px);   
         }
         @media (max-width: 378){
         width: calc(100% - 13px);
-        padding: 5px 3px;
+        padding: 14px 37px;
         }
 
         &:hover {
@@ -231,12 +236,21 @@ section {
 
         input[type='text'],
         input[type='email'] {
-            width: calc(100% - 15px);
-        }
-        @include screen(600) {
-            flex-direction: column;   
-        }
+            width: calc(50% - 15px);
+            
+            @include screen(580) {
+            flex-direction: column;
+            width: calc(50% - 9px);   
+            }
+            @include screen(380) {
+                padding: 13px 7px;
+            }
+
         
+            @include screen(578) {
+                flex-wrap: wrap;  
+            }
+        }
     }
 
     &__footer {
