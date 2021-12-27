@@ -25,10 +25,11 @@
             border-top: 1px solid #ddd;
         }
 
+
         @include screen(768) {
             width: calc(100% - 30px);
-            height:calc(100% - 30px) ;
-            overflow: hidden;
+            flex-direction: column;
+            align-items: center;
         }
     }
 
@@ -37,17 +38,21 @@
         flex-shrink: 0;
         display: flex;
         justify-content: center;
+
+        @include screen(768) {
+            width: calc(100% - 9px);
+            padding: 10px 0;
+        }
     }
 
     &__description {
         flex-grow: 1;
-        padding-left: 40px;
     }
 
     &__item-header {
         display: flex;
         align-items: center;
-        margin: 0 0 15px;
+        margin: 30px 0 15px;
     }
 
     &__date {
@@ -96,6 +101,11 @@
     &__preview {
         margin: 0 0 26px;
         line-height: 1.7;
+    }
+    @include screen(520) {
+        font-size: 14px;
+        line-height: 1.5;
+
     }
 
     &__link {

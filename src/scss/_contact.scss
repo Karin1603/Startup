@@ -16,6 +16,14 @@
         font-size: 12px;
         line-height: 20px;
 
+        @include screen(600) {
+            padding-right: 14px;
+        }
+        @include screen(378) {
+            padding-right: 7px;
+        }
+
+
         a {
             font-size: 12px;
             color: $font-color;
@@ -29,6 +37,10 @@
         &-item {
             position: relative;
             padding-left: 30px;
+
+            @include screen(600) {
+                padding-left:17px ;
+            }
 
             & + .contact__info-item {
                 margin-top: 28px;

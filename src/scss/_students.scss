@@ -43,6 +43,10 @@
         @include screen(768){
             font-size: 15px;
         }
+        @include screen(768){
+            line-height: 1.5;
+        }
+
     }
 
     &__swiper-author {

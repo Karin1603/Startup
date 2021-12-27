@@ -1,20 +1,45 @@
 .footer{
-    background-color: $violet;
-    max-width: 310px;
-}
-.footer__logo{
-    display: flex;
+    background: $violet;
+    height: 307px;
 
-    a {
-        display: flex;
+    .footer-title {
+        text-transform: uppercase;
         justify-content: center;
-        align-items: center;
-        width: 28px;
-        height: 28px;
+        display: flex;
+        padding-top: 20px;
+        padding-bottom: 27px;
+        margin-bottom: 23px;
+        position: relative;
 
-        &:hover {
-            background:#401352;
-            transition: .3s;
+        img {
+            height: 40px;
+            
+            filter: brightness(0) invert(1);
+            -webkit-filter : brightness(0) invert(1);
+
+            &:hover {
+                background: $white;
+                color:$violet;
+                transition: .3s;
+                cursor: pointer;
+                border-radius: 50%;
+            }
         }
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: calc(50% - 25px);
+            width: 50px;
+            height: 2px;
+            background-color: $white; 
+        }
+    }
+
+    .footer-text{
+    color: $white;
+    font-size: 12px;
+    text-align: center;
     }
 }

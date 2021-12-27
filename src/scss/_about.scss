@@ -119,6 +119,9 @@
 
         img {
             line-height: 0;
+
+            @include screen(768) {
+                width: calc(100% - 30px);}
         }
 
         &:before {
