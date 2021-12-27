@@ -2,6 +2,11 @@
 
     &__content {
         display: flex;
+
+        @include screen(480) {
+            flex-direction: column;
+            max-height: 729px;
+        }
     }
 
     &__form {
@@ -41,6 +46,11 @@
             @include screen(600) {
                 padding-left:17px ;
             }
+            @include screen(420) {
+                padding-left:17px;
+                padding-bottom: 10px;
+            }
+
 
             & + .contact__info-item {
                 margin-top: 28px;
